@@ -1,9 +1,10 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-public class App{
+public class TeoremaDaProbabilidadeTotal{
 
-    public static void main (String[] args){
+    public void ProbabilidadeTotal()
+    {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         int tamanho, i;
