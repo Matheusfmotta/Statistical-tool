@@ -34,7 +34,7 @@ public class TeoremaDaProbabilidadeTotal{
         System.out.println("Para cada partição, digite a probabilidade do evento de interesse (B) ocorrer.");
             for (i = 0; i < tamanho; i++) {
                 System.out.println("Qual a probabilidade do evento (B) ocorrer dado que pertence ao espaço A" +
-                        +(i +1)+ " de ("+vetEspacoParticionado[i]+"%) ?");
+                        +(i +1) + " de ("+vetEspacoParticionado[i]+"%) ?");
                             vetProbabilidadeCondicional[i] = sc.nextFloat();
             }
         float[] conta = new float[tamanho];
