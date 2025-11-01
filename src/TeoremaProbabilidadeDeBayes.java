@@ -1,10 +1,8 @@
 import java.util.Scanner;
 import java.util.Locale;
 public class TeoremaProbabilidadeDeBayes{
-    public void teoremaDeBayes(){
+    public void teoremaDeBayes(Scanner sc){
         TeoremaDaProbabilidadeTotal Calculo2 = new TeoremaDaProbabilidadeTotal();
-        Scanner sc = new Scanner(System.in).useLocale(Locale.US);
-
         float ProbabilidadeBDadoA, ProbabilidadeA, ValorProbabilidadeTotal = 0.0f, calculo1 ,Resultado = 0.0f;
         int SabeValorDaProbTotal = 0;
 
@@ -23,7 +21,7 @@ public class TeoremaProbabilidadeDeBayes{
             System.out.println("(2) Já sei o valor da probabilidade total");
             SabeValorDaProbTotal = sc.nextInt();
             if (SabeValorDaProbTotal == 1) {
-                Calculo2.probabilidadeTotal();
+                Calculo2.probabilidadeTotal(sc);
                 System.out.println("Digite o resultado encontrado da probabilidade total:");
                 ValorProbabilidadeTotal = sc.nextFloat();
             }
@@ -35,10 +33,8 @@ public class TeoremaProbabilidadeDeBayes{
 
             calculo1 = (ProbabilidadeA * ProbabilidadeBDadoA);
             Resultado = (calculo1/ValorProbabilidadeTotal);
-            double resultadoPercentual = Resultado * 100;
-
             System.out.printf(Locale.getDefault(), "\nRESULTADO: A probabilidade do evento (A1) dado que " +
-                    "o evento (B) ocorreu é de: %.1f%%\n", resultadoPercentual);
-            sc.close();
+                    "o evento (B) ocorreu é de: %.1f%%\n", Resultado);
+
     }
 }

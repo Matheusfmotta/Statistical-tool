@@ -1,9 +1,11 @@
 import java.util.Scanner;
+import java.util.Locale;
 class StatisticalTool {
    public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+       Scanner sc = new Scanner(System.in).useLocale(Locale.US);
        TeoremaDaProbabilidadeTotal Calculo2 = new TeoremaDaProbabilidadeTotal();
        TeoremaProbabilidadeDeBayes Calculo3 = new TeoremaProbabilidadeDeBayes();
+       ProbabilidadePriori Calculo4 = new ProbabilidadePriori();
 
        int EscolhaCalculo = 0;
            do {
@@ -11,6 +13,7 @@ class StatisticalTool {
                System.out.println("(1)SAIR");
                System.out.println("(2)USAR TEOREMA DA PROBABILIDADE TOTAL");
                System.out.println("(3)USAR TEOREMA DE BAYES");
+               System.out.println("(4)USAR CALCULO DA PROBABILIDADE A PRIORI");
 
                EscolhaCalculo = sc.nextInt();
                switch (EscolhaCalculo){
@@ -19,11 +22,15 @@ class StatisticalTool {
                    break;
 
                    case 2:
-                       Calculo2.probabilidadeTotal();
+                       Calculo2.probabilidadeTotal(sc);
                    break;
 
                    case 3:
-                       Calculo3.teoremaDeBayes();
+                       Calculo3.teoremaDeBayes(sc);
+                   break;
+
+                   case 4:
+                       Calculo4.probabilidadePriori(sc);
                    break;
 
                    default:
