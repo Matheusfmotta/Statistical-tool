@@ -1,7 +1,9 @@
 import java.util.Scanner;
 import java.util.Locale;
 public class ProbabilidadePriori {
+
     public void probabilidadePriori(Scanner sc){
+
         float CasosFavoraveis, CasosPossiveis;
         float Resultado;
 
@@ -14,6 +16,7 @@ public class ProbabilidadePriori {
         CasosPossiveis = sc.nextInt();
 
         Resultado =(CasosFavoraveis/CasosPossiveis) * 100;
+
         System.out.printf(Locale.getDefault(), "\nRESULTADO:  A probabilidade do evento (A) ocorrer " +
                 " é de: %.1f%%\n", Resultado);
     }

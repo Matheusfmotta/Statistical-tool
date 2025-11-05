@@ -1,8 +1,11 @@
 import java.util.Scanner;
 import java.util.Locale;
 public class TeoremaProbabilidadeDeBayes{
+
     public void teoremaDeBayes(Scanner sc){
+
         TeoremaDaProbabilidadeTotal Calculo2 = new TeoremaDaProbabilidadeTotal();
+
         float ProbabilidadeBDadoA, ProbabilidadeA, ValorProbabilidadeTotal = 0.0f, calculo1 ,Resultado = 0.0f;
         int SabeValorDaProbTotal = 0;
 

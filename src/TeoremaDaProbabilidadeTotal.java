@@ -4,6 +4,7 @@ import java.util.Locale;
 public class TeoremaDaProbabilidadeTotal{
 
     public void probabilidadeTotal(Scanner sc){
+
         int tamanho, i;
         float SomaDosValoresDoEsp, calculo1,calculo2,resultadoProbabilidadeTotal;
 
