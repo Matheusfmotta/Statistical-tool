@@ -7,6 +7,8 @@ class StatisticalTool {
        TeoremaProbabilidadeDeBayes Calculo3 = new TeoremaProbabilidadeDeBayes();
        ProbabilidadePriori Calculo4 = new ProbabilidadePriori();
        ProbabilidadePosteriori Calculo5 = new ProbabilidadePosteriori();
+       AnaliseCombinatoria Calculo6 = new AnaliseCombinatoria();
+       AnaliseCombinatoria Calculo7 = new AnaliseCombinatoria();
 
        int EscolhaCalculo = 0;
            do {
@@ -16,6 +18,8 @@ class StatisticalTool {
                System.out.println("(3)USAR TEOREMA DE BAYES");
                System.out.println("(4)USAR CALCULO DA PROBABILIDADE A PRIORI");
                System.out.println("(5)USAR CALCULO DA PROBABILIDADE POSTERIORI");
+               System.out.println("(6)USAR CALCULO DE PERMUTAÇÃO");
+               System.out.println("(7)USAR CALCULO DE ARRANJO");
 
                EscolhaCalculo = sc.nextInt();
                switch (EscolhaCalculo){
@@ -37,6 +41,14 @@ class StatisticalTool {
 
                    case 5:
                        Calculo5.probabilidadePosteriori(sc);
+                   break;
+
+                   case 6:
+                       Calculo6.permutacao(sc);
+                   break;
+
+                   case 7:
+                       Calculo7.arranjo(sc);
                    break;
 
                    default:
