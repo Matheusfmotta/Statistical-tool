@@ -9,6 +9,7 @@ class StatisticalTool {
        ProbabilidadePosteriori Calculo5 = new ProbabilidadePosteriori();
        AnaliseCombinatoria Calculo6 = new AnaliseCombinatoria();
        AnaliseCombinatoria Calculo7 = new AnaliseCombinatoria();
+       AnaliseCombinatoria Calculo8 = new AnaliseCombinatoria();
 
        int EscolhaCalculo = 0;
            do {
@@ -20,6 +21,7 @@ class StatisticalTool {
                System.out.println("(5)USAR CALCULO DA PROBABILIDADE POSTERIORI");
                System.out.println("(6)USAR CALCULO DE PERMUTAÇÃO");
                System.out.println("(7)USAR CALCULO DE ARRANJO");
+               System.out.println("(8)USAR CALCULO DE COMBINAÇÃO");
 
                EscolhaCalculo = sc.nextInt();
                switch (EscolhaCalculo){
@@ -49,6 +51,10 @@ class StatisticalTool {
 
                    case 7:
                        Calculo7.arranjo(sc);
+                   break;
+
+                   case 8:
+                       Calculo8.combinacao(sc);
                    break;
 
                    default:

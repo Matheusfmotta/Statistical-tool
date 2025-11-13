@@ -12,6 +12,8 @@ public class ProbabilidadePriori {
                 "casos favoráveis e todo tamanho amostral que é representado pelos casos possíveis");
         System.out.println("Digite abaixo o número de casos favoraveis ao evento (A)");
         CasosFavoraveis = sc.nextInt();
+
+        //TODO COLOCAR CONDIÇÃO DE CASOS POSSÍVEIS PRECISA SER MAIOR QUE FAVORAVEIS
         System.out.println("Agora digite o número de casos possíveis para o evento (A):");
         CasosPossiveis = sc.nextInt();
 

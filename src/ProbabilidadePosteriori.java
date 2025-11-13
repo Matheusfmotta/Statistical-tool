@@ -10,10 +10,10 @@ public class ProbabilidadePosteriori {
         System.out.println("--- Calculadora da Probabilidade a Posteriori ---");
         System.out.println("Esse programa irá calcular a probabilidade de um evento ocorrer a partir da observação" +
                 " do número de tentativas e do número de ocorrências dele");
-        System.out.println("Digite o número de vezes que o evento ocorreu:");
-        OcorrenciaDoEvento = sc.nextDouble();
         System.out.println("Digite o número total de tentativas do experimento:");
         TotalDeTentativas = sc.nextDouble();
+        System.out.println("Digite o número de vezes que o evento ocorreu:");
+        OcorrenciaDoEvento = sc.nextDouble();
 
         Resultado = (OcorrenciaDoEvento/TotalDeTentativas) * 100;
 
